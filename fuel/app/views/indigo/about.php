@@ -27,6 +27,15 @@ img {max-width: auto; max-height: 400px}
             <li>Rapidly Expanding Knowledge of HTML, CSS, JAVA, C/C++, Javascript, IntelliJ IDEA, and GitHub</li>
     </p>
     <section>
-    <p></p>
+        <p>
+           <img>
+           <?php echo  Asset::img("max.png") ?>
+           </img> 
+           <ul>
+               <li>Journalism and Media Communication Major with a Minor in Computer Science, focus on Networks and Security</li> 
+               <li>I work as a Broadcast Engineer and am working to building up to work on TV trucks within the sports video industry</li>
+               <li>Experiences working in CU Athletics- BuffVision and EIC for the PAC12 network, Lead AV for the Budweiser Event Center in Loveland, and Senior Media Specialist for CSU athletics- RamVision</li>
+           </ul>
+        </p>
     </section>
 </body>
