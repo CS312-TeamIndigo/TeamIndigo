@@ -1,4 +1,4 @@
-# TEAM NAME - Milestone 1
+# Team Indigo - Milestone 1
 
 ## Pages
 - [ ] Home
