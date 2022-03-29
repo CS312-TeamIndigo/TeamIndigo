@@ -85,7 +85,7 @@ Class Controller_Indigo extends Controller_Template{
                 $this->template->direction2 = 'color_table?direction=east';
             }
             elseif ($dir == "west") {
-                $this->template->title= 'The Notorious B.I.G.';
+                $this->template->title= 'Color Table';
                 $this->template->content = View::forge('indigo/color_table/color_table',$data);
                 $this->template->css = "west.css";
                 $this->template->filename = "indigo.png";
