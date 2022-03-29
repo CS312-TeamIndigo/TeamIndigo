@@ -6,10 +6,8 @@
         <p>Number of Columns: <input type="number" name="columns" min='1' max='10' /></p>
         <p><input type="submit" /></p>
 
-        <p>Rows: <?php if($_GET["rows"]){ echo $_GET[["rows"]; } 
-        else{ echo "none"; } ?><br></p>
-        <p>Columns: <?php if($_GET["columns"]){ echo $_GET["columns"]; } 
-        else{ echo "none"; }?></p>
+        <p>Rows: none</p>
+        <p>Columns: none</p>
 
 </form>
     </section>
