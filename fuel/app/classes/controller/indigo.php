@@ -16,7 +16,7 @@ Class Controller_Indigo extends Controller_Template{
 	public function action_index()
 	{
         $data = array();
-		$this->template->title= 'Team Indigo';
+	$this->template->title= 'Team Indigo';
         $this->template->content = View::forge('indigo/index',$data);
         $this->template->css = "east.css";
         $this->template->filename = "indigo.png";
@@ -71,26 +71,26 @@ Class Controller_Indigo extends Controller_Template{
         }
 	}
 
-    public function action_biggie()
+    public function action_color_table()
 	{
         $data = array();
         if(isset($_GET['direction'])){
             $dir = $_GET['direction'];
             if($dir == "east"){
-                $this->template->title= 'The Notorious B.I.G.';
-                $this->template->content = View::forge('indigo/biggie',$data);
+                $this->template->title= 'Color Table';
+                $this->template->content = View::forge('indigo/color_table',$data);
                 $this->template->css = 'east.css';
                 $this->template->filename = 'indigo.png';
                 $this->template->direction = 'about?direction=east';
-                $this->template->direction2 = 'biggie?direction=east';
+                $this->template->direction2 = 'color_table?direction=east';
             }
             elseif ($dir == "west") {
                 $this->template->title= 'The Notorious B.I.G.';
-                $this->template->content = View::forge('indigo/biggie',$data);
+                $this->template->content = View::forge('indigo/color_table',$data);
                 $this->template->css = "west.css";
                 $this->template->filename = "indigo.png";
                 $this->template->direction = "about?direction=west";
-                $this->template->direction2 = "biggie?direction=west";
+                $this->template->direction2 = "color_table?direction=west";
             }
         }
 	}
