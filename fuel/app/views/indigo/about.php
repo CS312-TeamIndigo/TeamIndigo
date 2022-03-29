@@ -8,7 +8,7 @@ img {max-width: auto; max-height: 400px}
             <?php echo  Asset::img("connor.png") ?>
         </img>
     
-        <h2> Connor Quick </h2>
+        <h3> Connor Quick </h3>
     
         <ul>
             <li>Computer Science Major with a focus on Networks and Security</li> 
@@ -22,7 +22,7 @@ img {max-width: auto; max-height: 400px}
             <?php echo  Asset::img("matt.png") ?>
         </img>
 
-        <h2> Matt Mattson </h2>
+        <h3> Matt Mattson </h3>
 
         <ul>
             <li>Responsive and Safe</li>
@@ -39,7 +39,7 @@ img {max-width: auto; max-height: 400px}
            <?php echo  Asset::img("max.png") ?>
            </img> 
            
-           <h2> Max Fink </h2>
+           <h3> Max Fink </h3>
 
            <ul>
                <li>Journalism and Media Communication Major with a Minor in Computer Science, focus on Networks and Security</li> 
