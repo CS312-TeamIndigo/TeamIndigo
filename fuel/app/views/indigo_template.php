@@ -17,8 +17,8 @@
             <br/>
             <div class="nav">
                 <a href="index">Home</a>
-                <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/cs312/Group1/index.php/indigo/'.$direction.'">About</a>' ?> 
-                <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/cs312/Group1/index.php/indigo/'.$direction2.'">Color Table</a>' ?>             
+                <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/m1/index.php/indigo/'.$direction.'">About</a>' ?> 
+                <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/m1/index.php/indigo/'.$direction2.'">Color Table</a>' ?>             
                 <a href="east?direction=east">East</a>
                 <a href="west?direction=west">West</a>
             </div>
