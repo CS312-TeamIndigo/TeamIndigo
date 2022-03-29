@@ -7,9 +7,9 @@
         <p><input type="submit" /></p>
 
         <p>Rows: <?php if($_GET["rows"]){ echo $_GET[["rows"]; } 
-        else{ echo "none"} ?><br></p>
+        else{ echo "none"; } ?><br></p>
         <p>Columns: <?php if($_GET["columns"]){ echo $_GET["columns"]; } 
-        else{ echo "none"}?></p>
+        else{ echo "none"; }?></p>
 
 </form>
     </section>
