@@ -6,6 +6,8 @@
         <p>Number of Columns: <input type="number" name="columns" min='1' max='10' /></p>
         <p><input type="submit" /></p>
 
+        <p>Rows: <?php echo $_POST["rows"]; ?><br></p>
+        <p>Columns: <?php echo $_POST["columns"]; ?></p>
 
 </form>
     </section>
