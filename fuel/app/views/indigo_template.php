@@ -6,7 +6,7 @@
     <meta name="Team Indigo" content="template">
     <meta name="description" content="template">
     <meta name="author" content="Team Indigo">
-    <meta name="keywords" content="hip-hop, rap, best, legends, Kendrick Lamar, Biggie Smalls, Notorious B.I.G.">
+    <meta name="keywords" content="Indigo, Team Indigo, color, colors, indigo">
 
     <!-- <?php echo Asset::css($css) ?> putting this here has no effect -->
     <?php echo Asset::css($css) ?>
@@ -18,7 +18,7 @@
             <div class="nav">
                 <a href="index">Home</a>
                 <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/cs312/Group1/index.php/indigo/'.$direction.'">About</a>' ?> 
-                <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/cs312/Group1/index.php/indigo/'.$direction2.'">Biggie</a>' ?>             
+                <?php echo '<a href="https://cs.colostate.edu:4444/~cwquick1/cs312/Group1/index.php/indigo/'.$direction2.'">Color Table</a>' ?>             
                 <a href="east?direction=east">East</a>
                 <a href="west?direction=west">West</a>
             </div>
