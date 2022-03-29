@@ -31,6 +31,9 @@ img {max-width: auto; max-height: 400px}
            <img>
            <?php echo  Asset::img("max.png") ?>
            </img> 
+           
+           <h2> Max Fink </h2>
+
            <ul>
                <li>Journalism and Media Communication Major with a Minor in Computer Science, focus on Networks and Security</li> 
                <li>I work as a Broadcast Engineer and am working to building up to work on TV trucks within the sports video industry</li>
