@@ -36,7 +36,9 @@
             <br />
             <br />
             <br />
-            Author: Team Indigo -------- Last Modified: 3/26/2022
+
+            <hr>
+            Author: Team Indigo -------- Last Modified: 3/29/2022
        </footer>
     </body>
 </div>
