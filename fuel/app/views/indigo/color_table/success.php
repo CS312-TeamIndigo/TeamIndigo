@@ -50,7 +50,7 @@
                         var val = $temp_color;
                         function valueselect(sel) {
                             val = sel.options[sel.selectedIndex].value;
-                            <?php $abc = '<script>document.write(abc)</script>'?>   
+                            document.cookie='profile_viewer_uid=' + String(val);  
 
                         }
                         </script>";
@@ -72,7 +72,9 @@
             
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
+                $new_index = $_COOKIE['profile_viewer_uid'];
+
+                echo "<td style='background-color: $colors[$new_index]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
