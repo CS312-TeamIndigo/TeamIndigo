@@ -50,9 +50,8 @@
                         var val = $temp_color;
                         function valueselect(sel) {
                             val = sel.options[sel.selectedIndex].value;
-                        }
-                        function getValue(){
-                            document.write(val);
+                            <?php $abc = '<script>document.write(abc)</script>'?>   
+
                         }
                         </script>";
                 echo "<tr>";
@@ -73,9 +72,7 @@
             
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td style='background-color: $colors[<?php
-                echo '<script>getValue();</script>';
-                ?>]; width: 80%'>"; 
+                echo "<td style='background-color: $colors[$abc]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
