@@ -40,11 +40,6 @@
         echo "</Strong>";
         echo "<br>";*/
         /*---------------Debug Purposes--------------*/
-        <script>
-        function handleChange(event){
-            $color_index = event.value;
-        }
-        </script>
         
                 /*-----------------------------Top Table-------------------------------*/
         echo "<br>";
