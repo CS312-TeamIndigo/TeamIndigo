@@ -47,9 +47,9 @@
             $color_index = $temp_color;
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
                 echo  " <script>
-                        var value = $temp_color;
+                        var val = $temp_color;
                         function valueselect(sel) {
-                            value = sel.options[sel.selectedIndex].value;
+                            val = sel.options[sel.selectedIndex].value;
                         }
                         </script>";
                 echo "<tr>";
@@ -70,7 +70,7 @@
             
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td style='background-color: $colors[<script>document.write(value)</script>]; width: 80%'>"; 
+                echo "<td style='background-color: $colors[<script>document.write(val)</script>]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
