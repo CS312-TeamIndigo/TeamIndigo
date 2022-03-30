@@ -70,13 +70,11 @@
         /*Counting across the top column*/
 
         for ($temp_height = 0; $temp_height < $in_height; $temp_height++) {
-            for ($i = 0; $i < $in_height; $i++) {
                 echo "<td>";
                 echo "<th>";
-                echo $alphabet[$i];//FIXME: Variable for counting the Alphabet from A to Z Skipping the first cell
+                echo $alphabet[$temp_height];//FIXME: Variable for counting the Alphabet from A to Z Skipping the first cell
                 echo "</th>";
                 echo "</td>";
-            }
         }
         /*Counting down the left column*/
         for ($temp_row = 0; $temp_row < $in_row; $temp_row++) {
