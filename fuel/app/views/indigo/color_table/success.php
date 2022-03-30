@@ -1,8 +1,3 @@
-<script type="text/javascript">
-function check(str){
-    console.log("it's being called");
-}
-</script>
 <body>
 <section>
     <!--/---------------Debug Purposes--------------/-->
@@ -25,7 +20,6 @@ function check(str){
         $temp_color = 0;
         $temp_table_height = 0;
         $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
-        $color_index = 0;
         /*Bottom Table Variables*/
         $in_height = $_POST['rows'];
         $in_row = $_POST['rows'];
@@ -51,10 +45,16 @@ function check(str){
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
+                $color_index = 0;
+                <script type="text/javascript">
+                    function check(str){
+                        console.log("it's being called");
+                    }
+                </script>
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select class='colorList' onchange=check('<?php phpfun();?>+this.value')>";
+                echo    "<select class='colorList' onchange=check(this.value)>";
                 echo        "<option value=0> Red </option>";
                 echo        "<option value=1> Orange </option>";
                 echo        "<option value=2> Yellow </option>";
