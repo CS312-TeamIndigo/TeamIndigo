@@ -29,9 +29,10 @@ Class Controller_Indigo extends Controller_Template{
     }
 
     public function action_color_table() {
-        $rows = Input::post('rows');
-        $colors = Input::post('colors');
+    
         $data = array();
+        $this->template->rows = Input::post('rows');
+        $this->template->colors = Input::post('colors');
         $this->template->title= 'Color Table';
         $this->template->content = View::forge('indigo/color_table/color_table',$data);
         $this->template->css = 'east.css';
