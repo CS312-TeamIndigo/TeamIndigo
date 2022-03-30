@@ -49,7 +49,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select id='colorIndex' onchange='handleChange()'>";
+                echo    "<select id='colorIndex' onchange='javascript:valueselect(this)'>";
                 echo        "<option value = 0> Red </option>";
                 echo        "<option value = 1> Orange </option>";
                 echo        "<option value = 2> Yellow </option>";
@@ -61,10 +61,12 @@
                 echo        "<option value = 8> Black </option>";
                 echo        "<option value = 9> Teal </option>";
                 echo    "</select>";
-                echo  " <?php function handleChange() {
-                            color_index = this.value;
-                        } 
-                        ?> ";
+                echo  " <script>
+                        function valueselect(sel) {
+                            var value = sel.options[sel.selectedIndex].value;
+                            $color_index = value;
+                        }
+                        </script>";
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
