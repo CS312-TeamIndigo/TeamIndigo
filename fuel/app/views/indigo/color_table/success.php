@@ -67,7 +67,7 @@
                 // }
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td style=background-color: <?php echo $current_color; ?>; width: 80%'>"; 
+                echo "<td style='background-color: <?php echo $current_color; ?>; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
