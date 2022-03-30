@@ -61,9 +61,9 @@
                 echo        "<option value=8> Black </option>";
                 echo        "<option value=9> Teal </option>";
                 echo    "</select>";
-                if(isset($_POST['colorList'])){
-                    $color_index=$_POST['colorList'];
-                }
+                echo "if(isset($_POST['colorList'])){
+                        $color_index=$_POST['colorList'];
+                    }"
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
