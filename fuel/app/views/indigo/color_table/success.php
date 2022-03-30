@@ -45,11 +45,11 @@
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
-                $color_index = 0;
-                <script type="text/javascript">
+                echo $color_index = 0;
+                echo "<script type="text/javascript">
                     function check(str){
                         console.log("it's being called");
-                    }
+                    }";
                 </script>
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
