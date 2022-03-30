@@ -63,6 +63,13 @@
                 echo        "<option value=9> Teal </option>";
                 echo    "</select>";
                 echo "</td>";
+                echo "<script>
+                        $('.colorList').change(() => {
+                            $color_index = this.value;
+                            console.log('it is being called');
+                        // add the center-header class to #part1 (the h3 tag)
+                        });
+                    </script>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
                 echo "  &nbsp;";
