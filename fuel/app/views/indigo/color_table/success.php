@@ -51,6 +51,9 @@
                         function valueselect(sel) {
                             val = sel.options[sel.selectedIndex].value;
                         }
+                        function getValue(){
+                            document.write(val);
+                        }
                         </script>";
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
@@ -70,7 +73,7 @@
             
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
+                echo "<td style='background-color: $colors[javascript:getValue()]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
