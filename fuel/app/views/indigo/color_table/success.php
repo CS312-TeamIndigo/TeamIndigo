@@ -44,7 +44,7 @@
         echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
-            $color_index = temp_color;
+            $color_index = $temp_color;
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
