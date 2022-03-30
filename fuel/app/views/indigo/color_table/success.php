@@ -1,3 +1,4 @@
+<script type="text/javascript" src="color_table.js"></script>
 <body>
 <section>
     <!--/---------------Debug Purposes--------------/-->
@@ -39,9 +40,11 @@
         echo "</Strong>";
         echo "<br>";*/
         /*---------------Debug Purposes--------------*/
+        <script>
         function handleChange(event){
             $color_index = event.value;
         }
+        </script>
         
                 /*-----------------------------Top Table-------------------------------*/
         echo "<br>";
@@ -52,7 +55,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select name='colorList' id='colorList' onchange=handleChange()";
+                echo    "<select name='colorList' id='colorList'";
                 echo        "<option value=0> Red </option>";
                 echo        "<option value=1> Orange </option>";
                 echo        "<option value=2> Yellow </option>";
