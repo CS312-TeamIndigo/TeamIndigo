@@ -10,6 +10,10 @@
         <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
         <p><input type="submit"/></p>
 
+        <script>
+                        var val = 0;
+                        document.cookie='profile_viewer_uid=' + String(val); 
+        </script>
         <?php
 
         /*-----------------------------Table Variables-------------------------------*/
@@ -47,7 +51,7 @@
             $color_index = $temp_color;
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
                 echo  " <script>
-                        var val = $temp_color;
+                        val = $temp_color;
                         function valueselect(sel) {
                             val = sel.options[sel.selectedIndex].value; 
                             document.cookie='profile_viewer_uid=' + String(val); 
