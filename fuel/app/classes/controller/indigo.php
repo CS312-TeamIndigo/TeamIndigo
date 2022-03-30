@@ -49,7 +49,13 @@ Class Controller_Indigo extends Controller_Template{
                 "success_view" => $success_view
             );
             return Response::forge(View::forge("indigo/color_table/color_table", $data));
-        } else {
+        } elseif($rows == null || $colors == null) {
+            $fail_view = View::forge("indigo/color_table/failure.php");
+            $data = array(
+                "failure_view" => $fail_view
+            );
+            return Response::forge(View::forge("indigo/color_table/color_table", $data));
+        }else{
             $fail_view = View::forge("indigo/color_table/failure.php");
             $data = array(
                 "failure_view" => $fail_view
