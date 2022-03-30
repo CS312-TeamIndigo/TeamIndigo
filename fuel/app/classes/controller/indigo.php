@@ -1,72 +1,71 @@
 <?php
+
+use Fuel\Core\Input;
+use Fuel\Core\Response;
+use Fuel\Core\View;
 use \Model\FuelFormExample;
 
 /**
  * @access public
  * @return Response
  */
-Class Controller_Indigo extends Controller_Template{
-    
+class Controller_Indigo extends Controller_Template
+{
+
     public $filename = "";
-    public $template= "indigo_template";
-    public $title="";
-    public $name="";
+    public $template = "indigo_template";
+    public $title = "";
+    public $name = "";
 
-	public function action_index() {
+    public function action_index()
+    {
         $data = array();
-	    $this->template->title= 'Team Indigo';
-        $this->template->content = View::forge('indigo/index',$data);
-        $this->template->css = "east.css";
-        $this->template->filename = "indigo.png";
-	}
-
-
-    public function action_about() {
-        $data = array();
-        $this->template->title= 'About';
-        $this->template->content = View::forge('indigo/about',$data);
+        $this->template->title = 'Team Indigo';
+        $this->template->content = View::forge('indigo/index', $data);
         $this->template->css = "east.css";
         $this->template->filename = "indigo.png";
     }
 
-    public function action_color_table() {
-    
+
+    public function action_about()
+    {
         $data = array();
-        $this->template->title= 'Color Table';
-        $this->template->content = View::forge('indigo/color_table/color_table',$data);
+        $this->template->title = 'About';
+        $this->template->content = View::forge('indigo/about', $data);
+        $this->template->css = "east.css";
+        $this->template->filename = "indigo.png";
+    }
+
+    public function action_color_table()
+    {
+
+        $data = array();
+        $this->template->title = 'Color Table';
+        $this->template->content = View::forge('indigo/color_table/color_table', $data);
         $this->template->css = 'east.css';
         $this->template->filename = 'indigo.png';
-	}
+    }
 
 
-    public function post_color_table() {
-        $rows = Input::post('rows') ? Input::post('rows') : -1;
-        $colors = Input::post('colors') ? Input::post('colors') : -1;
-        if (($rows <= 26 && !($rows < 1)) && ($colors <= 10 && !($colors < 1))) {
+    public function post_color_table()
+    {
+        $rows = Input::post('rows') ? Input::post('rows') : 0;
+        $colors = Input::post('colors') ? Input::post('colors') : 0;
+        if ((($rows <= 26) && ($rows >= 1)) && (($colors <= 10) && ($colors >= 1))) {
             FuelFormExample::log_message($rows, $colors);
-            $success_view = View::forge("indigo/color_table/success.php");
-            $data = array(
-                "success_view" => $success_view
-            );
-            return Response::forge(View::forge("indigo/color_table/color_table", $data));
-        } elseif($rows == null || $colors == null) {
-            $fail_view = View::forge("indigo/color_table/failure.php");
-            $data = array(
-                "failure_view" => $fail_view
-            );
-            return Response::forge(View::forge("indigo/color_table/color_table", $data));
-        }else{
-            $fail_view = View::forge("indigo/color_table/failure.php");
-            $data = array(
-                "failure_view" => $fail_view
-            );
-            return Response::forge(View::forge("indigo/color_table/color_table", $data));
+            $data = array();
+            $this->template->title = 'Color Table';
+            $this->template->content = View::forge('indigo/color_table/success', $data);
+            $this->template->css = 'east.css';
+            $this->template->filename = 'indigo.png';
+
+        } else {
+            $data = array();
+            $this->template->title = 'Color Table';
+            $this->template->content = View::forge('indigo/color_table/failure', $data);
+            $this->template->css = 'east.css';
+            $this->template->filename = 'indigo.png';
+
         }
-        $data = array();
-        $this->template->title= 'Color Table';
-        $this->template->content = View::forge('indigo/color_table/color_table',$data);
-        $this->template->css = 'east.css';
-        $this->template->filename = 'indigo.png';
-	}
-    
+    }
 }
