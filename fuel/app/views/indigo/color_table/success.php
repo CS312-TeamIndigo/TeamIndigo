@@ -45,7 +45,8 @@
         
                 /*-----------------------------Top Table-------------------------------*/
         echo "<br>";
-        echo "<table id='table1' style='border: #0f0f0f; border-style: solid; width: 100%'>";
+        echo "<div id='table1'>";
+        echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             $color_index = $temp_color;
@@ -76,14 +77,16 @@
             }
         }
         echo "</table>";
+
+        echo "</div>";
         /*-----------------------------End Top Table-------------------------------*/
 
         echo "<br>";
 
         /*-----------------------------Bottom Table-------------------------------*/
         /*Bottom Table*/
-        echo "<div style='display: flex; justify-content: center;'>";
-        echo "<table id='table2' style='border: #0f0f0f; border-style: solid;'>";
+        echo "<div id= 'table2' style='display: flex; justify-content: center;'>";
+        echo "<table style='border: #0f0f0f; border-style: solid;'>";
         /*Counting across the top column*/
 
         for ($temp_height = 0; $temp_height < $in_height; $temp_height++) {
@@ -120,18 +123,18 @@
         function printDiv() {
             var divContents = document.getElementById("table1").innerHTML;
             var divContents2 = document.getElementById("table2").innerHTML;
-            var a = window.open('', '', 'height=500, width=500');
+            var a = window.open('', '', 'height=1000, width=1000');
             a.document.write('<html>');
             a.document.write('<header> <h1>Team Indigo </h1><br>');
-            a.document.write('<img src="indigo.png" alt="Missing Logo"> <br></header>');
+            a.document.write('<br></header>');
             a.document.write(divContents);
+            a.document.write('<br>');
             a.document.write(divContents2);
             a.document.write('</body></html>');
             a.document.close();
             a.print();
         }
         </script>
-*** Give ID tags to both tables (table1, table2)
 
 
         <!-----------------------------End Print Current Table------------------------------->
