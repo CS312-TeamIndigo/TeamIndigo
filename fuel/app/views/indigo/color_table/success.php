@@ -50,7 +50,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo "<select name="colorList" id="colorList">
+                echo "<select name='colorList' id='colorList'>
                 <option value="$colors[0]"> Red </option>
                 <option value="$colors[1]"> Orange = </option>
                 <option value="$colors[2]"> Yellow </option>
