@@ -45,11 +45,14 @@
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             $color_index = $temp_color;
+            function handleChange() {
+                color_index = this.value;
+            }
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select class='colorList'>";
+                echo    "<select id='colorIndex' onchange='handleChange()'>";
                 echo        "<option value = 0> Red </option>";
                 echo        "<option value = 1> Orange </option>";
                 echo        "<option value = 2> Yellow </option>";
