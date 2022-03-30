@@ -34,10 +34,10 @@ Class Controller_Indigo extends Controller_Template{
         
         $data = array();
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            $this->$rows = $_GET["rows"];
+            $this->template->$rows = $_GET["rows"];
         }
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            $this->$colors = $_GET["colors"];
+            $this->template->$colors = $_GET["colors"];
         }
         $this->template->title= 'Color Table';
         $this->template->content = View::forge('indigo/color_table/color_table',$data);
