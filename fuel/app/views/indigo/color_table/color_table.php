@@ -1,3 +1,4 @@
+<script type="text/javascript" src="color_table.js"></script>
 <body>
     <section>
         Please Enter The Number of Rows and the Number of Colors:
