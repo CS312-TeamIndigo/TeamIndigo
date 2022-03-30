@@ -64,7 +64,7 @@
                 echo  " <?php function handleChange() {
                             color_index = this.value;
                         } 
-                        ?> "
+                        ?> ";
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
