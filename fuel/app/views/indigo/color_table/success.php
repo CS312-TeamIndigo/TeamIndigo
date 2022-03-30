@@ -62,9 +62,9 @@
                 echo        "<option value='background-color: black'> Black </option>";
                 echo        "<option value='background-color: teal'> Teal </option>";
                 echo    "</select>";
-                echo"if(isset($_POST['colorList'])){
-                        $current_color=$_POST['colorList];
-                    }"
+                echo "if(isset($_POST['colorList'])){";
+                echo "   $current_color=$_POST['colorList];";
+                echo "}";
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style=$current_color; width: 80%'>"; 
