@@ -52,7 +52,7 @@
                 //Variable for Name of Color
                 echo    "<select name='colorList' id='colorList'>";
                 echo        "<option value='red'> Red </option>";
-                echo        "<option value='orange'> Orange = </option>";
+                echo        "<option value='orange'> Orange </option>";
                 echo        "<option value='yellow'> Yellow </option>";
                 echo        "<option value='green'> Green </option>";
                 echo        "<option value='blue'> Blue </option>";
