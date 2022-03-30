@@ -33,15 +33,15 @@ Class Controller_Indigo extends Controller_Template{
     public function action_color_table() {
         
         $data = array();
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            if($_GET['rows']){
-                $this->template->$rows = $_GET["rows"];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if($_POST['rows']){
+                $this->template->$rows = $_POST["rows"];
             }
             else{ $this->template->$rows = 0; }
         }
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            if($_GET['colors']){
-                $this->template->$colors = $_GET["colors"];
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if($_POST['colors']){
+                $this->template->$colors = $_POST["colors"];
             }
             else{ $this->template->$colors = 0; }
         }
