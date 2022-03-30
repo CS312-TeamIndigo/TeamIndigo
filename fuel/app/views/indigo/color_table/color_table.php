@@ -6,7 +6,16 @@
         <p>Number of Columns: <input type="number" name="colors" id="colors" min='1' max='10' /></p>
         <p><input type="submit" /></p>
 
-        
+        <?php
+   
+            echo Form::open(array(
+                "action" => "index/indigo",
+                "method" => "post",
+                "id" => "fuel_form"
+            ));
+
+            echo Form::close();
+        ?>
 
 </form>
     </section>
