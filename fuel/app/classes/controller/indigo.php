@@ -1,6 +1,5 @@
 <?php
 use \Model\FuelFormExample;
-use \Debug;
 
 /**
  * @access public
