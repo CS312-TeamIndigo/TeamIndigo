@@ -1,4 +1,9 @@
-<script type="text/javascript" src="color_table.js"></script>
+<script type="text/javascript">
+function check(str){
+    console.log("it's being called");
+}
+
+</script>
 <body>
 <section>
     <!--/---------------Debug Purposes--------------/-->
@@ -50,7 +55,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select class='colorList'>";
+                echo    "<select class='colorList' onchange='check('<?php phpfun();?>'+this.value)>";
                 echo        "<option value=0> Red </option>";
                 echo        "<option value=1> Orange </option>";
                 echo        "<option value=2> Yellow </option>";
