@@ -51,16 +51,16 @@
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
                 echo "<select name='colorList' id='colorList'>
-                <option value='$colors[0]'> Red </option>
-                <option value='$colors[1]'> Orange = </option>
-                <option value='$colors[2]'> Yellow </option>
-                <option value='$colors[3]'> Green </option>
-                <option value='$colors[4]'> Blue </option>
-                <option value='$colors[5]'> Purple  </option>
-                <option value='$colors[6]'> Grey </option>
-                <option value='$colors[7]'> Brown </option>
-                <option value='$colors[8]'> Black </option>
-                <option value='$colors[9]'> Teal </option>
+                <option value=$colors[0]> Red </option>
+                <option value=$colors[1]> Orange = </option>
+                <option value=$colors[2]> Yellow </option>
+                <option value=$colors[3]> Green </option>
+                <option value=$colors[4]> Blue </option>
+                <option value=$colors[5]> Purple  </option>
+                <option value=$colors[6]> Grey </option>
+                <option value=$colors[7]> Brown </option>
+                <option value=$colors[8]> Black </option>
+                <option value=$colors[9]> Teal </option>
                 </select> "
                 echo "</td>";
                 //  Variable for BG color
