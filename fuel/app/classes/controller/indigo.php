@@ -10,6 +10,8 @@ Class Controller_Indigo extends Controller_Template{
     public $template= "indigo_template";
     public $title="";
     public $name="";
+    public $rows=0;
+    public $colors=0;
 
 	public function action_index() {
         $data = array();
@@ -29,23 +31,14 @@ Class Controller_Indigo extends Controller_Template{
     }
 
     public function action_color_table() {
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            $rows = $_GET["rows"];
-            if (empty($rows)) {
-                echo "None";
-            } else {
-                echo $rows;
-            }
-        }
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            $colors = $_GET["colors"];
-            if (empty($colors)) {
-                echo "None";
-            } else {
-                echo $colors;
-            }
-        }
+        
         $data = array();
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            $this->$rows = $_GET["rows"];
+        }
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            $this->$colors = $_GET["colors"];
+        }
         $this->template->title= 'Color Table';
         $this->template->content = View::forge('indigo/color_table/color_table',$data);
         $this->template->css = 'east.css';
