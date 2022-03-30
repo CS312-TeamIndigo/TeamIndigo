@@ -45,9 +45,6 @@
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             $color_index = $temp_color;
-            function handleChange() {
-                color_index = this.value;
-            }
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
@@ -64,6 +61,10 @@
                 echo        "<option value = 8> Black </option>";
                 echo        "<option value = 9> Teal </option>";
                 echo    "</select>";
+                echo  " <?php function handleChange() {
+                            color_index = this.value;
+                        } 
+                        ?> "
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
