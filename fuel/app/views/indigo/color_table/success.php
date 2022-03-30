@@ -49,8 +49,8 @@
                 echo "<script type='text/javascript'>
                     function check(str){
                         console.log('its being called');
-                    }";
-                </script>
+                    }
+                </script>"
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
