@@ -50,21 +50,21 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                // echo    "<select name='colorList' id='colorList' onchange=>this.form.submit()";
-                // echo        "<option value='red'> Red </option>";
-                // echo        "<option value='orange'> Orange </option>";
-                // echo        "<option value='yellow'> Yellow </option>";
-                // echo        "<option value='green'> Green </option>";
-                // echo        "<option value='blue'> Blue </option>";
-                // echo        "<option value='purple'> Purple  </option>";
-                // echo        "<option value='grey'> Grey </option>";
-                // echo        "<option value='brown'> Brown </option>";
-                // echo        "<option value='black'> Black </option>";
-                // echo        "<option value='teal'> Teal </option>";
-                // echo    "</select>";
-                // if(isset($_POST['colorList'])){
-                //     $current_color=$_POST['colorList'];
-                // }
+                echo    "<select name='colorList' id='colorList' onchange=>this.form.submit()";
+                echo        "<option value='red'> Red </option>";
+                echo        "<option value='orange'> Orange </option>";
+                echo        "<option value='yellow'> Yellow </option>";
+                echo        "<option value='green'> Green </option>";
+                echo        "<option value='blue'> Blue </option>";
+                echo        "<option value='purple'> Purple  </option>";
+                echo        "<option value='grey'> Grey </option>";
+                echo        "<option value='brown'> Brown </option>";
+                echo        "<option value='black'> Black </option>";
+                echo        "<option value='teal'> Teal </option>";
+                echo    "</select>";
+                if(isset($_POST['colorList'])){
+                    $current_color=$_POST['colorList'];
+                }
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $current_color; width: 80%'>"; 
