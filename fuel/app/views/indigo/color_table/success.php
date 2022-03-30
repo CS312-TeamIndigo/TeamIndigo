@@ -45,26 +45,21 @@
         $count = count($colors);
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
-                echo $color_index = 0;
-                echo "<script type='text/javascript'>
-                    function check(str){
-                        console.log('its being called');
-                    }
-                </script>"
+                $color_index = temp_color;
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select class='colorList' onchange=check(this.value)>";
-                echo        "<option value=0> Red </option>";
-                echo        "<option value=1> Orange </option>";
-                echo        "<option value=2> Yellow </option>";
-                echo        "<option value=3> Green </option>";
-                echo        "<option value=4> Blue </option>";
-                echo        "<option value=5> Purple  </option>";
-                echo        "<option value=6> Grey </option>";
-                echo        "<option value=7> Brown </option>";
-                echo        "<option value=8> Black </option>";
-                echo        "<option value=9> Teal </option>";
+                echo    "<select class='colorList' onchange='color_index = this.value'>";
+                echo        "<option value = 0> Red </option>";
+                echo        "<option value = 1> Orange </option>";
+                echo        "<option value = 2> Yellow </option>";
+                echo        "<option value = 3> Green </option>";
+                echo        "<option value = 4> Blue </option>";
+                echo        "<option value = 5> Purple  </option>";
+                echo        "<option value = 6> Grey </option>";
+                echo        "<option value = 7> Brown </option>";
+                echo        "<option value = 8> Black </option>";
+                echo        "<option value = 9> Teal </option>";
                 echo    "</select>";
                 echo "</td>";
                 //  Variable for BG color
