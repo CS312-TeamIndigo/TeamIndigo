@@ -10,8 +10,8 @@ Class Controller_Indigo extends Controller_Template{
     public $template= "indigo_template";
     public $title="";
     public $name="";
-    public $rows=0;
-    public $colors=0;
+    public $rows = '0';
+    public $colors = '0';
 
 	public function action_index() {
         $data = array();
@@ -31,8 +31,6 @@ Class Controller_Indigo extends Controller_Template{
     }
 
     public function action_color_table() {
-        public $rows = '0';
-        public $colors = '0'
         $data = array();
         $this->template->$rows = '0';
         $this->template->$colors = '0';
