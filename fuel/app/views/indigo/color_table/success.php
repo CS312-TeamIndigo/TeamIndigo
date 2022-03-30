@@ -47,15 +47,15 @@
             $color_index = $temp_color;
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
                 echo  " <script>
-                        function valueselect(sel, index) {
+                        function valueselect(sel) {
                             var value = sel.options[sel.selectedIndex].value;
-                            index = value;
+                            .$color_index. = value;
                         }
                         </script>";
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select id='colorIndex' onchange='javascript:valueselect(this, $color_index)'>";
+                echo    "<select id='colorIndex' onchange='javascript:valueselect(this)'>";
                 echo        "<option value = 0> Red </option>";
                 echo        "<option value = 1> Orange </option>";
                 echo        "<option value = 2> Yellow </option>";
