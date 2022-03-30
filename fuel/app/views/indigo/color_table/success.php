@@ -46,6 +46,12 @@
         for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
             $color_index = $temp_color;
             for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
+                echo  " <script>
+                        function valueselect(sel) {
+                            var value = sel.options[sel.selectedIndex].value;
+                            $color_index = value;
+                        }
+                        </script>";
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
@@ -61,12 +67,7 @@
                 echo        "<option value = 8> Black </option>";
                 echo        "<option value = 9> Teal </option>";
                 echo    "</select>";
-                echo  " <script>
-                        function valueselect(sel) {
-                            var value = sel.options[sel.selectedIndex].value;
-                            $color_index = value;
-                        }
-                        </script>";
+            
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
