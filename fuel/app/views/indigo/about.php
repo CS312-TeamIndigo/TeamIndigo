@@ -22,15 +22,13 @@ img {max-width: auto; max-height: 400px}
             <?php echo  Asset::img("matt.png") ?>
         </img>
 
-        <h3> Matt Mattson </h3>
+        <h3> Matthew C. Mattson </h3>
 
         <ul>
-            <li>Responsive and Safe</li>
-            <li>Communicates Effectively with Customers and Managers; Safety-First Approach to all Tasks</li>
-            <li>Leadership</li>
-            <li>Knowledgeable and Compassionate Leader; Skillful at Interviewing, Hiring, and Training Employees</li>
-            <li>Programming</li>
-            <li>Rapidly Expanding Knowledge of HTML, CSS, JAVA, C/C++, Javascript, IntelliJ IDEA, and GitHub</li>
+            <li>Computer Science Major with an open outlook on specializations</li>
+            <li>Knowledgeable and Compassionate Leader</li>
+            <li>Rapidly Expanding Knowledge of HTML, CSS, PHP, JAVA, C/C++, Javascript, IDEs, GitHub/ZenHub, and more</li>
+            <li>Father of Two</li>
         </ul>
     </p>
     <section>
