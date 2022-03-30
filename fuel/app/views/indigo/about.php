@@ -22,7 +22,7 @@ img {max-width: auto; max-height: 400px}
             <?php echo  Asset::img("matt.png") ?>
         </img>
 
-        <h3> Matthew C. Mattson </h3>
+        <h3> Matthew Mattson </h3>
 
         <ul>
             <li>Computer Science Major with an open outlook on specializations</li>
