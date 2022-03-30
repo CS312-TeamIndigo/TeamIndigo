@@ -40,8 +40,9 @@
         echo "<br>";*/
         /*---------------Debug Purposes--------------*/
         function handleChange(event){
-            color_index = event.value;
+            $color_index = event.value;
         }
+        
                 /*-----------------------------Top Table-------------------------------*/
         echo "<br>";
         echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
@@ -51,7 +52,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select name='colorList' id='colorList' onchange=>handleChange()";
+                echo    "<select name='colorList' id='colorList' onchange=handleChange()";
                 echo        "<option value=0> Red </option>";
                 echo        "<option value=1> Orange </option>";
                 echo        "<option value=2> Yellow </option>";
