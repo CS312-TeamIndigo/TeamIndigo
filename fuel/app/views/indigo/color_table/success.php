@@ -50,22 +50,22 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo "<select name='colorList' id='colorList'>"
-                echo "<option value=$colors[0]> Red </option>"
-                echo "<option value=$colors[1]> Orange = </option>"
-                echo "<option value=$colors[2]> Yellow </option>"
-                echo "<option value=$colors[3]> Green </option>"
-                echo "<option value=$colors[4]> Blue </option>"
-                echo "<option value=$colors[5]> Purple  </option>"
-                echo "<option value=$colors[6]> Grey </option>"
-                echo "<option value=$colors[7]> Brown </option>"
-                echo "<option value=$colors[8]> Black </option>"
-                echo "<option value=$colors[9]> Teal </option>"
-                echo "</select>"
+                // echo    "<select name='colorList' id='colorList'>"
+                // echo        "<option value=$colors[0]> Red </option>"
+                // echo        "<option value=$colors[1]> Orange = </option>"
+                // echo        "<option value=$colors[2]> Yellow </option>"
+                // echo        "<option value=$colors[3]> Green </option>"
+                // echo        "<option value=$colors[4]> Blue </option>"
+                // echo        "<option value=$colors[5]> Purple  </option>"
+                // echo        "<option value=$colors[6]> Grey </option>"
+                // echo        "<option value=$colors[7]> Brown </option>"
+                // echo        "<option value=$colors[8]> Black </option>"
+                // echo        "<option value=$colors[9]> Teal </option>"
+                // echo    "</select>"
                 echo "</td>";
                 //  Variable for BG color
                 echo "<td style='background-color: $colors[$temp_color]; width: 80%'>"; 
-                echo "&nbsp;";
+                echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
             }
