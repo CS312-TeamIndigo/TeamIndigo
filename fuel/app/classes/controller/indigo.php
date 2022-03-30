@@ -31,10 +31,11 @@ Class Controller_Indigo extends Controller_Template{
     }
 
     public function action_color_table() {
-        
+        public $rows = '0';
+        public $colors = '0'
         $data = array();
-        $this->template->$rows = 0;
-        $this->template->$colors = 0;
+        $this->template->$rows = '0';
+        $this->template->$colors = '0';
         $this->template->title= 'Color Table';
         $this->template->content = View::forge('indigo/color_table/color_table',$data);
         $this->template->css = 'east.css';
