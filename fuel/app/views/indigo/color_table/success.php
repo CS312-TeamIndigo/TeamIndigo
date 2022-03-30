@@ -49,10 +49,10 @@
                 echo  " <script>
                         var val = $temp_color;
                         function valueselect(sel) {
-                            val = sel.options[sel.selectedIndex].value;
-                            document.cookie='profile_viewer_uid=' + String(val);  
-
+                            val = sel.options[sel.selectedIndex].value; 
+                            document.cookie='profile_viewer_uid=' + String(val); 
                         }
+                        document.cookie='profile_viewer_uid=' + String(val); 
                         </script>";
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
