@@ -69,7 +69,7 @@
                 echo "</td>";
                 //  Variable for BG color
 
-                echo "<td style='background-color: $colors[$DOMDocument::getElementById('colorIndex')]; width: 80%'>"; 
+                echo "<td style='background-color: $colors[<?php echo $DOMDocument::getElementById('colorIndex') ?>]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
