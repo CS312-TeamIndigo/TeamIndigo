@@ -73,7 +73,7 @@
             
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td style='background-color: $colors[javascript:getValue()]; width: 80%'>"; 
+                echo "<td style='background-color: $colors[getValue()]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
