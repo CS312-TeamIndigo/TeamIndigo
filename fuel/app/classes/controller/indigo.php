@@ -40,8 +40,8 @@ Class Controller_Indigo extends Controller_Template{
 
 
     public function post_color_table() {
-        $rows = Input::post('rows');
-        $colors = Input::post('colors');
+        $rows = Input::post('rows') ? Input::post('rows') : -1;
+        $colors = Input::post('colors') ? Input::post('colors') : -1;
         if (($rows <= 26 && !($rows < 1)) && ($colors <= 10 && !($colors < 1))) {
             FuelFormExample::log_message($rows, $colors);
             $success_view = View::forge("indigo/color_table/success.php");
