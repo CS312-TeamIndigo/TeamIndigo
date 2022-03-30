@@ -76,7 +76,9 @@
             
                 echo "</td>";
                 //  Variable for BG color
-                $new_index = $_COOKIE['profile_viewer_uid'] ? $_COOKIE['profile_viewer_uid'] : $color_index;
+                if($_COOKIE['profile_viewer_uid']){ $new_index = $_COOKIE['profile_viewer_uid'] }else{
+                    $new_index = $color_index;
+                }
 
                 echo "<td style='background-color: $colors[$new_index]; width: 80%'>"; 
                 echo "  &nbsp;";
