@@ -48,15 +48,17 @@
                 echo "
                 <script type='text/javascript'>
                 var new_color_index = '.$color_index.';
+                window.location.href='index.php?uid=' + new_color_index.toString();
                 function btnClick(event) {
                     new_color_index = event.value;
+                    window.location.href='index.php?uid=' + new_color_index.toString();
                 }
                 </script>
                     ";
                 echo "</td>";
-                
+                $somevar = $_GET["uid"]
                 //  Variable for BG color
-                echo "<td id='background color' style='background-color: $colors[<?php echo '<script>document.writeln(new_color_index);</script>'?>]; width: 80%'>"; 
+                echo "<td id='background color' style='background-color: $colors[$somevar]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
