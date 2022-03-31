@@ -48,8 +48,8 @@
                 echo "</td>";
                 echo "
                     <script type='text/javascript'>
-                    jQuery('.colorIndex option:selected').removeAttr('selected');
-                    jQuery('.colorIndex option[value='+'.$color_index.'+']').attr('selected', 'selected');  
+                        jQuery('.colorIndex option:selected').removeAttr('selected');
+                        jQuery('.colorIndex option[value='+'.$color_index.'+']').attr('selected', 'selected');  
                     </script>
                     ";
                 //  Variable for BG color
