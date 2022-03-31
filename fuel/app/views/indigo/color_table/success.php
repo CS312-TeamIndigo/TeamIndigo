@@ -46,7 +46,7 @@
                 echo        "<option value = 9 id='Teal'> Teal </option>";
                 echo    "</select>";
                 echo "
-                <script>
+                <script type='text/javascript'>
                 function btnClick() {
                 var x = document.getElementById('background color');
                 x[0].style.backgroundColor ='blue'; 
