@@ -14,9 +14,32 @@
         
         
         <script type='text/javascript'>
-            function other_method(){
-                alert('Execute Javascript Function Through PHP');
+            function PrintTable() {        
+                //Print the DIV contents i.e. the HTML Table.
+                var divContents = document.getElementById("dvContents").innerHTML;
+                printWindow.document.write(divContents);
+                printWindow.document.close();
+                printWindow.print();
             }
+            <table id="dvContents">
+                <tr>
+                    <td>
+                    <select onChange={handleSelect}>
+                        <option value = '0' > Red </option>
+                        <option value = '1'> Orange </option>
+                        <option value = '2'> Yellow </option>
+                        <option value = '3'> Green </option>
+                        <option value = '4'> Blue </option>
+                        <option value = '5'> Purple </option>
+                        <option value = '6'> Grey </option>
+                        <option value = '7'> Brown </option>
+                        <option value = '8'> Black </option>
+                        <option value = '9'> Teal </option>
+                    </select>
+                    </td>
+                    <td id="backgroundColor"></td>
+                </tr>
+            </table>
         </script>
 
         <?php
