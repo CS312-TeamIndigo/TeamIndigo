@@ -17,8 +17,11 @@
             function print(){
                 return(<p>Hello World</p>);
             }
-            print();
         </script>
+
+        <?php
+            echo(print());
+        ?>
         
         <?php
 
