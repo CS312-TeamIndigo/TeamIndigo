@@ -20,7 +20,7 @@
         </script>
 
         <?php
-            echo(print());
+            echo "<script type ='text/javascript'>print()</script>"
         ?>
         
         <?php
