@@ -15,7 +15,7 @@
         
         <script type='text/javascript'>
             function other_method(){
-                return(<p>Hello World</p>);
+                alert('Execute Javascript Function Through PHP');
             }
         </script>
 
