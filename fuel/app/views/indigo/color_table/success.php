@@ -33,7 +33,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select class='colorIndex' onchange='javascript:valueselect(this)'>";
+                echo    "<select name='colorIndex class='colorIndex' onchange='javascript:valueselect(this)'>";
                 echo        "<option value = 0 id='Red'> Red </option>";
                 echo        "<option value = 1 id='Orange'> Orange </option>";
                 echo        "<option value = 2 id='Yellow'> Yellow </option>";
@@ -48,8 +48,7 @@
                 echo "</td>";
                 echo "
                     <script type='text/javascript'>
-                        jQuery('.colorIndex option:selected').removeAttr('selected');
-                        jQuery('.colorIndex option[value='.$color_index.']').attr('selected', 'selected');  
+                        $('select[name$='colorIndex']').val('.$color_index.');  
                     </script>
                     ";
                 //  Variable for BG color
