@@ -50,7 +50,6 @@
                 var new_color_index = '.$color_index.';
                 function btnClick(event) {
                     new_color_index = event.value;
-                    document.getElementById('background_color').style.backgroundColor('blue');
                 }
                 </script>
                     ";
