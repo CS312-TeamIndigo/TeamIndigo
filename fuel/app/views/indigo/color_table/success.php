@@ -10,10 +10,10 @@
         <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
         <p><input type="submit"/></p>
 
-        <?php $in_color = $_POST['colors'] ?>
+   
 
         <script>
-          var numberOfRows = '<?=$in_color?>'
+         
           function ColorTable(props){
               const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
               const existingColors = [];
@@ -58,14 +58,22 @@
               </tr>
           );
           }
-          <div id='table1'>
-              <ColorTable numberOfRows={numberOfRows} />
-          </div>
-
           </script>
-
+        <?php 
+          $in_color = $_POST['colors']
+          echo "
+          <script>
+            var numberOfRows = '<?=$in_color?>'
+            <ColorTable numberOfRows={numberOfRows} />
+          </script>
+          "
+        ?>
+      
 
         <?php
+
+
+        
 
         /*Bottom Table Variables*/
         $in_height = $_POST['rows'];
