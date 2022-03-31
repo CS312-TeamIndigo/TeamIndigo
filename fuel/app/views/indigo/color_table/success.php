@@ -16,6 +16,7 @@
         <script type='text/javascript'>
             function PrintTable() {        
                 //Print the DIV contents i.e. the HTML Table.
+                var printWindow = window.open('', '', 'height=200,width=400');
                 var divContents = document.getElementById("dvContents").innerHTML;
                 printWindow.document.write(divContents);
                 printWindow.document.close();
