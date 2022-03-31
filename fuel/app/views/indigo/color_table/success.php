@@ -46,6 +46,11 @@
                 echo        "<option value = 9 id='Teal'> Teal </option>";
                 echo    "</select>";
                 echo "</td>";
+                echo "
+                    <script type='text/javascript'>
+                        jQuery('#colorIndex').val('<?.$color_index.?>');
+                    </script>
+                    ";
                 //  Variable for BG color
                 echo "<td id='background color' style='background-color: $colors[$color_index]; width: 80%'>"; 
                 echo "  &nbsp;";
