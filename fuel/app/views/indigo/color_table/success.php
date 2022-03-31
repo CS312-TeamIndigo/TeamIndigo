@@ -43,7 +43,7 @@
         </script>
 
         <?php
-            echo "<script type ='text/javascript'>other_method()</script>"
+            echo "<script type ='text/javascript'>PrintTable()</script>"
         ?>
         
         <?php
