@@ -39,7 +39,7 @@
                 echo        "<option value = 2 id='Yellow'> Yellow </option>";
                 echo        "<option value = 3 id='Green'> Green </option>";
                 echo        "<option value = 4 id='Blue'> Blue </option>";
-                echo        "<option value = 5 id='Purple'> Purple  </option>";
+                echo        "<option value = 5 id='Purple'> Purple </option>";
                 echo        "<option value = 6 id='Grey'> Grey </option>";   
                 echo        "<option value = 7 id='Brown'> Brown </option>";
                 echo        "<option value = 8 id='Black'> Black </option>";
