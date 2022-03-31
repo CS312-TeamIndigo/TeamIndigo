@@ -65,7 +65,7 @@
                 echo        "<option value = 7> Brown </option>";
                 echo        "<option value = 8> Black </option>";
                 echo        "<option value = 9> Teal </option>";
-                echo    "</select>";d
+                echo    "</select>";
             
                 echo "</td>";
                 //  Variable for BG color
