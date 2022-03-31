@@ -50,7 +50,7 @@
                     <script type='text/javascript'>
                     newselectedIndex = '.$color_index.';
                     jQuery('#colorIndex option:selected').removeAttr('selected');
-                    jQuery('#colorIndex option[value="'+newselectedIndex +'"]').attr('selected', 'selected');  
+                    jQuery('#colorIndex option[value='"+newselectedIndex +"']').attr('selected', 'selected');  
                     </script>
                     ";
                 //  Variable for BG color
