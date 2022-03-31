@@ -48,7 +48,7 @@
                 echo "
                 <script>
                 function btnClick() {
-                var x = document.getElementById('Black');
+                var x = document.getElementById('background color');
                 x[0].style.backgroundColor ='#000000'; 
                 x[0].Color =''; 
                 x[0].style.backgroundColor ='yellow';
