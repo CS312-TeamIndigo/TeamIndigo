@@ -1,14 +1,14 @@
-<script type="text/javascript" src="color_table.js"></script>
-<body>
-    <section>
+<div class="center">
+<div class="grid-container">
+    <div class="grid-container-form">
         Please Enter The Number of Rows and the Number of Colors:
         <form action="color_table" method="post">
-        <p>Number of Rows: <input type="number" name="rows" id="rows" min='1' max='26'/></p>
-        <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10' /></p>
-        <p><input type="submit" /></p>
+            <p>Number of Rows: <input type="number" name="rows" id="rows" min='1' max='26'/></p>
+            <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
+            <p><input type="submit"/></p>
 
-        <?php
-   
+            <?php
+
             echo Form::open(array(
                 "action" => "index/indigo",
                 "method" => "post",
@@ -16,8 +16,8 @@
             ));
 
             echo Form::close();
-        ?>
-
-</form>
-    </section>
-</body>
+            ?>
+        </form>
+    </div>
+</div>
+</div>

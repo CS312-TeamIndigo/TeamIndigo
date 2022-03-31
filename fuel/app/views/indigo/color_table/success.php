@@ -1,3 +1,4 @@
+<div class="center">
 <body>
 <section>
     <!--/---------------Debug Purposes--------------/-->
@@ -253,3 +254,4 @@
     </form>
 </section>
 </body>
+</div>
