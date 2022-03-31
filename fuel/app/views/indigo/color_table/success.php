@@ -48,7 +48,7 @@
                 echo "</td>";
                 echo "
                     <script type='text/javascript'>
-                        jQuery('#colorIndex').val('<?.$color_index.?>');
+                        jQuery('#colorIndex').val('.$color_index.');
                     </script>
                     ";
                 //  Variable for BG color
