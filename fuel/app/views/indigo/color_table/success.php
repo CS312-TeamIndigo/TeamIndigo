@@ -33,7 +33,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select name='colorIndex class='colorIndex' onchange='javascript:valueselect(this)'>";
+                echo    "<select name='colorIndex' class='colorIndex' onchange='javascript:valueselect(this)'>";
                 echo        "<option value = 0 id='Red'> Red </option>";
                 echo        "<option value = 1 id='Orange'> Orange </option>";
                 echo        "<option value = 2 id='Yellow'> Yellow </option>";
