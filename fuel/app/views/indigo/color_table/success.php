@@ -33,7 +33,7 @@
                 echo "<tr>";
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
-                echo    "<select name='colorIndex' class='colorIndex' onchange='javascript:btnClick()'>";
+                echo    "<select name='colorIndex' class='colorIndex' onchange='javascript:btnClick(this)'>";
                 echo        "<option value = 0 id='Red'> Red </option>";
                 echo        "<option value = 1 id='Orange'> Orange </option>";
                 echo        "<option value = 2 id='Yellow'> Yellow </option>";
@@ -47,8 +47,8 @@
                 echo    "</select>";
                 echo "
                 <script type='text/javascript'>
-                function btnClick() {
-                alert('youre a goof');
+                function btnClick(event) {
+                    '.$color_index.' = event.value;
                 }
                 </script>
                     ";
