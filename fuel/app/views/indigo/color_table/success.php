@@ -13,38 +13,58 @@
 
         
         
-        <script type='text/javascript'>
-            function PrintTable() {        
-                //Print the DIV contents i.e. the HTML Table.
-                var printWindow = window.open('', '', 'height=200,width=400');
-                var divContents = document.getElementById("dvContents").innerHTML;
-                printWindow.document.write(divContents);
-                printWindow.document.close();
-                printWindow.print();
-            }
-            <table id="dvContents">
-                <tr>
-                    <td>
-                    <select onChange={handleSelect}>
-                        <option value = '0' > Red </option>
-                        <option value = '1'> Orange </option>
-                        <option value = '2'> Yellow </option>
-                        <option value = '3'> Green </option>
-                        <option value = '4'> Blue </option>
-                        <option value = '5'> Purple </option>
-                        <option value = '6'> Grey </option>
-                        <option value = '7'> Brown </option>
-                        <option value = '8'> Black </option>
-                        <option value = '9'> Teal </option>
-                    </select>
-                    </td>
-                    <td id="backgroundColor"></td>
-                </tr>
-            </table>
-        </script>
-
         <?php
-            echo "<script type ='text/javascript'>PrintTable()</script>"
+                   /*-----------------------------Top Table-------------------------------*/
+        /*Top Table Variables*/
+        $in_color = $_POST['colors'];
+        $in_table_height = 1;
+        $temp_color = 0;
+        $temp_table_height = 0;
+        $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
+
+
+        echo "<br>";
+        echo "<div id='table1'>";
+        echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
+        $count = count($colors);
+        for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
+            $color_index = $temp_color;
+            for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
+                echo "<tr>";
+                echo "<td style='background-color: white; width: 20%;'>";
+                //Variable for Name of Color
+                echo    "<select name='colorIndex' class='colorIndex' onchange='javascript:valueselect(this)'>";
+                echo        "<option value = 0 id='Red'> Red </option>";
+                echo        "<option value = 1 id='Orange'> Orange </option>";
+                echo        "<option value = 2 id='Yellow'> Yellow </option>";
+                echo        "<option value = 3 id='Green'> Green </option>";
+                echo        "<option value = 4 id='Blue'> Blue </option>";
+                echo        "<option value = 5 id='Purple'> Purple </option>";
+                echo        "<option value = 6 id='Grey'> Grey </option>";   
+                echo        "<option value = 7 id='Brown'> Brown </option>";
+                echo        "<option value = 8 id='Black'> Black </option>";
+                echo        "<option value = 9 id='Teal'> Teal </option>";
+                echo    "</select>";
+                echo "
+                            <script type='text/javascript'>
+                            $(document).ready(()=>{
+                                $('#colorIndex').val('.$color_index.');
+                            });   
+                            </script>
+                    ";
+                echo "</td>";
+                
+                //  Variable for BG color
+                echo "<td id='background color' style='background-color: $colors[$color_index]; width: 80%'>"; 
+                echo "  &nbsp;";
+                echo "</td>";
+                echo "</tr>";
+            }
+        }
+        echo "</table>";
+
+        echo "</div>";
+        /*-----------------------------End Top Table-------------------------------*/
         ?>
         
         <?php
