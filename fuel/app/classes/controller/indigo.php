@@ -61,8 +61,8 @@ class Controller_Indigo extends Controller_Template
         if ((($rows <= 26) && ($rows >= 1)) && (($colors <= 10) && ($colors >= 1))) {
             FuelFormExample::log_message($rows, $colors);
             $data = array();
-            $this->template->title = 'Color Table';
-            $this->template->headerTitle = 'Color Table';
+            $this->template->title = 'Team Indigo | Color Coordination Table';
+            $this->template->headerTitle = 'Color Coordination Table';
             $this->template->content = View::forge('indigo/color_table/success', $data);
             $this->template->css = 'east.css';
             $this->template->filename = "";
@@ -71,8 +71,8 @@ class Controller_Indigo extends Controller_Template
 
         } else {
             $data = array();
-            $this->template->title = 'Color Table';
-            $this->template->headerTitle = 'Color Table';
+            $this->template->title = 'Team Indigo | Color Coordination Table';
+            $this->template->headerTitle = 'Color Coordination Table';
             $this->template->content = View::forge('indigo/color_table/failure', $data);
             $this->template->css = 'east.css';
             $this->template->filename = "";
