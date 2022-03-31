@@ -13,8 +13,7 @@
    
 
         <script>
-         
-          function ColorTable(props){
+         function ColorTable(props){
               // const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
               // const existingColors = [];
               // const colorList = props.numberOfRows ? props.numberOfRows.map((color, index) => 
@@ -24,7 +23,7 @@
             );
           }
 
-          function ColorRow(props){
+          function ColorRow(){
               var currentColor = props.colors[props.index];
               document.getElementById('backgroundColor').bgColor = currentColor; 
               function handleSelect(event){
@@ -58,22 +57,16 @@
               </tr>
           );
           }
-          </script>
+        </script>
         <?php 
           $in_color = $_POST['colors']
           echo "
-          <script>
-            <ColorTable />
-          </script>
+          <script><ColorTable /></script>
           ";
         ?>
       
 
         <?php
-
-
-        
-
         /*Bottom Table Variables*/
         $in_height = $_POST['rows'];
         $in_row = $_POST['rows'];
