@@ -56,7 +56,7 @@
                     ";
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td id='background color' style='background-color: $colors[new_color_index]; width: 80%'>"; 
+                echo "<td id='background color' style='background-color: $colors[<script>new_color_index</script>]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
