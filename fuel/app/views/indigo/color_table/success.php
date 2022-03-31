@@ -50,13 +50,13 @@
                 var new_color_index = '.$color_index.';
                 function btnClick(event) {
                     new_color_index = event.value;
-                    alert('this is the value' + new_color_index.toString());
+                    document.getElementById('background_color').style.backgroundColor('blue');
                 }
                 </script>
                     ";
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td id='background color' style='background-color: $colors[<script>new_color_index</script>]; width: 80%'>"; 
+                echo "<td id='background_color' style='background-color: $colors[$color_index]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
