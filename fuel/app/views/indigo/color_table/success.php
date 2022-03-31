@@ -47,15 +47,16 @@
                 echo    "</select>";
                 echo "
                 <script type='text/javascript'>
+                var new_color_index = '.$color_index.';
                 function btnClick(event) {
-                    '.$color_index.' = event.value;
+                    new_color_index = event.value;
                 }
                 </script>
                     ";
                 echo "</td>";
                 
                 //  Variable for BG color
-                echo "<td id='background color' style='background-color: $colors[$color_index]; width: 80%'>"; 
+                echo "<td id='background color' style='background-color: $colors[<script>document.writeln(new_color_index);</script>]; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
