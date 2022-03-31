@@ -10,20 +10,63 @@
         <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
         <p><input type="submit"/></p>
 
+        <?php $in_color = $_POST['colors'] ?>
+
         <script>
-                        var val = 0;
-                        document.cookie='profile_viewer_uid=' + String(val); 
-        </script>
+          var numberOfRows = '<?=$in_color?>'
+          function ColorTable(props){
+              const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
+              const existingColors = [];
+              const colorList = props.numberOfRows ? props.numberOfRows.map((color, index) => 
+              <ColorRow index={index} colors={colors} existingColors={existingColors} />) : <row>No Results...</row>
+            return (
+              <p>I'm calling the JS correctly</p> 
+            );
+          }
+
+          function ColorRow(props){
+              var currentColor = props.colors[props.index];
+              document.getElementById('backgroundColor').bgColor = currentColor; 
+              function handleSelect(event){
+                  if(props.existingColors.includes(event.value)){
+                      currentColor = props.colors[props.index];
+                      document.getElementById('color').bgColor = currentColor;
+                  }
+                  else{
+                      currentColor = props.colors[event.value];
+                      props.existingColors.push(event.value);
+                      document.getElementById('backgroundColor').bgColor = currentColor;
+                  }
+              }
+          return (
+              <tr>
+                  <td>
+                      <select onChange={handleSelect}>
+                          <option value = '0' > Red </option>
+                          <option value = '1'> Orange </option>
+                          <option value = '2'> Yellow </option>
+                          <option value = '3'> Green </option>
+                          <option value = '4'> Blue </option>
+                          <option value = '5'> Purple </option>
+                          <option value = '6'> Grey </option>
+                          <option value = '7'> Brown </option>
+                          <option value = '8'> Black </option>
+                          <option value = '9'> Teal </option>
+                      </select>
+                  </td>
+                  <td id="backgroundColor"></td>
+              </tr>
+          );
+          }
+          <div id='table1'>
+              <ColorTable numberOfRows={numberOfRows} />
+          </div>
+
+          </script>
+
+
         <?php
 
-        /*-----------------------------Table Variables-------------------------------*/
-
-        /*Top Table Variables*/
-        $in_color = $_POST['colors'];
-        $in_table_height = 1;
-        $temp_color = 0;
-        $temp_table_height = 0;
-        $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
         /*Bottom Table Variables*/
         $in_height = $_POST['rows'];
         $in_row = $_POST['rows'];
@@ -31,70 +74,34 @@
         $temp_row = 0;
         $alphabet = range('A', 'Z');
 
-        /*---------------Debug Purposes--------------*/
-        /*echo "<br>";
-        echo "<Strong>";
-        echo "You entered ";
-        echo $in_height;
-        echo " rows and ";
-        echo $in_color;
-        echo " colors:";
-        echo "</Strong>";
-        echo "<br>";*/
-        /*---------------Debug Purposes--------------*/
         
-                /*-----------------------------Top Table-------------------------------*/
-               echo "<script>
-                function ColorTable(props){
-                    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
-                    const existingColors = [];
-                    const colorList = props.numberOfRows ? props.numberOfRows.map((color, index) => 
-                    <ColorRow index={index} colors={colors} existingColors={existingColors} />) : <row>No Results...</row>
-                  return (
-                    <p>props.numberOfRows.string()</p>
-                  );
-                }
-                
-                function ColorRow(props){
-                    var currentColor = props.colors[props.index];
-                    document.getElementById('backgroundColor').bgColor = currentColor; 
-                    function handleSelect(event){
-                        if(props.existingColors.includes(event.value)){
-                            currentColor = props.colors[props.index];
-                            document.getElementById('color').bgColor = currentColor;
-                        }
-                        else{
-                            currentColor = props.colors[event.value];
-                            props.existingColors.push(event.value);
-                            document.getElementById('backgroundColor').bgColor = currentColor;
-                        }
-                    }
-                return (
-                    <tr>
-                        <td>
-                            <select onChange={handleSelect}>
-                                <option value = '0' > Red </option>
-                                <option value = '1'> Orange </option>
-                                <option value = '2'> Yellow </option>
-                                <option value = '3'> Green </option>
-                                <option value = '4'> Blue </option>
-                                <option value = '5'> Purple </option>
-                                <option value = '6'> Grey </option>
-                                <option value = '7'> Brown </option>
-                                <option value = '8'> Black </option>
-                                <option value = '9'> Teal </option>
-                            </select>
-                        </td>
-                        <td id='backgroundColor'></td>
-                    </tr>
-                );
-                }
-                const numberOfRows = ".$in_color.";
-                <div id='table1'>
-                    <ColorTable numberOfRows={numberOfRows} />
-                </div>
-                
-                </script>"
+
+        echo "<br>";
+
+        /*-----------------------------Bottom Table-------------------------------*/
+        /*Bottom Table*/
+        echo "<div id= 'table2' style='display: flex; justify-content: center;'>";
+        echo "<table style='border: #0f0f0f; border-style: solid;'>";
+        /*Counting across the top column*/
+
+        for ($temp_height = 0; $temp_height < $in_height; $temp_height++) {
+                echo "<td>";
+                echo "<th>";
+                echo $alphabet[$temp_height];//FIXME: Variable for counting the Alphabet from A to Z Skipping the first cell
+                echo "</th>";
+                echo "</td>";
+        }
+        /*Counting down the left column*/
+        for ($temp_row = 0; $temp_row < $in_row; $temp_row++) {
+            echo "<tr>";
+
+            echo "<td>$counter</td>";
+            echo "</tr>";
+            ++$counter;
+        }
+
+        echo "</table>";
+        echo "</div>";
 
         /*-----------------------------End Bottom Table-------------------------------*/
         ?>
