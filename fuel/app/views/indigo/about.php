@@ -29,7 +29,7 @@
                         <li> Computer Science Major with an open outlook on specializations</li>
                         <li> Father of Two</li>
                         <li> Knowledgeable and Compassionate Leader</li>
-                        <li> Rapidly Expanding Knowledge of Programing Languages, Workflow Programs and Problem
+                        <li> Rapidly Expanding Knowledge of Programming Languages, Workflow Programs and Problem
                             Solving
                         </li>
                     </ul>
