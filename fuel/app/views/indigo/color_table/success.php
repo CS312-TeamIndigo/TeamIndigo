@@ -15,10 +15,10 @@
         <script>
          
           function ColorTable(props){
-              const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
-              const existingColors = [];
-              const colorList = props.numberOfRows ? props.numberOfRows.map((color, index) => 
-              <ColorRow index={index} colors={colors} existingColors={existingColors} />) : <row>No Results...</row>
+              // const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
+              // const existingColors = [];
+              // const colorList = props.numberOfRows ? props.numberOfRows.map((color, index) => 
+              // <ColorRow index={index} colors={colors} existingColors={existingColors} />) : <row>No Results...</row>
             return (
               <p>I'm calling the JS correctly</p> 
             );
@@ -63,8 +63,7 @@
           $in_color = $_POST['colors']
           echo "
           <script>
-            var numberOfRows = '<?=$in_color?>'
-            <ColorTable numberOfRows={numberOfRows} />
+            <ColorTable />
           </script>
           "
         ?>
