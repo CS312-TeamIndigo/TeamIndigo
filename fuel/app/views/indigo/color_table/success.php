@@ -10,61 +10,20 @@
         <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
         <p><input type="submit"/></p>
 
-   
-
         <script>
-         function ColorTable(props){
-              // const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'brown', 'black', 'teal'];
-              // const existingColors = [];
-              // const colorList = props.numberOfRows ? props.numberOfRows.map((color, index) => 
-              // <ColorRow index={index} colors={colors} existingColors={existingColors} />) : <row>No Results...</row>
-            return (
-              <p>I'm calling the JS correctly</p> 
-            );
-          }
-
-          function ColorRow(){
-              var currentColor = props.colors[props.index];
-              document.getElementById('backgroundColor').bgColor = currentColor; 
-              function handleSelect(event){
-                  if(props.existingColors.includes(event.value)){
-                      currentColor = props.colors[props.index];
-                      document.getElementById('color').bgColor = currentColor;
-                  }
-                  else{
-                      currentColor = props.colors[event.value];
-                      props.existingColors.push(event.value);
-                      document.getElementById('backgroundColor').bgColor = currentColor;
-                  }
-              }
-          return (
-              <tr>
-                  <td>
-                      <select onChange={handleSelect}>
-                          <option value = '0' > Red </option>
-                          <option value = '1'> Orange </option>
-                          <option value = '2'> Yellow </option>
-                          <option value = '3'> Green </option>
-                          <option value = '4'> Blue </option>
-                          <option value = '5'> Purple </option>
-                          <option value = '6'> Grey </option>
-                          <option value = '7'> Brown </option>
-                          <option value = '8'> Black </option>
-                          <option value = '9'> Teal </option>
-                      </select>
-                  </td>
-                  <td id="backgroundColor"></td>
-              </tr>
-          );
-          }
+                        var val = 0;
+                        document.cookie='profile_viewer_uid=' + String(val); 
         </script>
-        <?php 
-          $in_color = $_POST['colors']
-          echo "<script><ColorTable /></script>";
-        ?>
-      
-
         <?php
+
+        /*-----------------------------Table Variables-------------------------------*/
+
+        /*Top Table Variables*/
+        $in_color = $_POST['colors'];
+        $in_table_height = 1;
+        $temp_color = 0;
+        $temp_table_height = 0;
+        $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
         /*Bottom Table Variables*/
         $in_height = $_POST['rows'];
         $in_row = $_POST['rows'];
@@ -72,7 +31,55 @@
         $temp_row = 0;
         $alphabet = range('A', 'Z');
 
+        /*---------------Debug Purposes--------------*/
+        /*echo "<br>";
+        echo "<Strong>";
+        echo "You entered ";
+        echo $in_height;
+        echo " rows and ";
+        echo $in_color;
+        echo " colors:";
+        echo "</Strong>";
+        echo "<br>";*/
+        /*---------------Debug Purposes--------------*/
         
+                /*-----------------------------Top Table-------------------------------*/
+        echo "<br>";
+        echo "<div id='table1'>";
+        echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
+        $count = count($colors);
+        for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
+            $color_index = $temp_color;
+            for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
+                echo "<tr>";
+                echo "<td style='background-color: white; width: 20%;'>";
+                //Variable for Name of Color
+                echo    "<select id='colorIndex' onchange='javascript:valueselect(this)'>";
+                echo        "<option value = 0> Red </option>";
+                echo        "<option value = 1> Orange </option>";
+                echo        "<option value = 2> Yellow </option>";
+                echo        "<option value = 3> Green </option>";
+                echo        "<option value = 4> Blue </option>";
+                echo        "<option value = 5> Purple  </option>";
+                echo        "<option value = 6> Grey </option>";
+                echo        "<option value = 7> Brown </option>";
+                echo        "<option value = 8> Black </option>";
+                echo        "<option value = 9> Teal </option>";
+                echo    "</select>";
+            
+                echo "</td>";
+                //  Variable for BG color
+
+                echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
+                echo "  &nbsp;";
+                echo "</td>";
+                echo "</tr>";
+            }
+        }
+        echo "</table>";
+
+        echo "</div>";
+        /*-----------------------------End Top Table-------------------------------*/
 
         echo "<br>";
 
