@@ -13,59 +13,12 @@
 
         
         
-        <?php
-                   /*-----------------------------Top Table-------------------------------*/
-        /*Top Table Variables*/
-        $in_color = $_POST['colors'];
-        $in_table_height = 1;
-        $temp_color = 0;
-        $temp_table_height = 0;
-        $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
-
-
-        echo "<br>";
-        echo "<div id='table1'>";
-        echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
-        $count = count($colors);
-        for ($temp_color = 0; $temp_color < $in_color; $temp_color++) {
-            $color_index = $temp_color;
-            for ($temp_table_height = 0; $temp_table_height < $in_table_height; $temp_table_height++) {
-                echo "<tr>";
-                echo "<td style='background-color: white; width: 20%;'>";
-                //Variable for Name of Color
-                echo    "<select name='colorIndex' class='colorIndex' onchange='javascript:valueselect(this)'>";
-                echo        "<option value = 0 id='Red'> Red </option>";
-                echo        "<option value = 1 id='Orange'> Orange </option>";
-                echo        "<option value = 2 id='Yellow'> Yellow </option>";
-                echo        "<option value = 3 id='Green'> Green </option>";
-                echo        "<option value = 4 id='Blue'> Blue </option>";
-                echo        "<option value = 5 id='Purple'> Purple  </option>";
-                echo        "<option value = 6 id='Grey'> Grey </option>";   
-                echo        "<option value = 7 id='Brown'> Brown </option>";
-                echo        "<option value = 8 id='Black'> Black </option>";
-                echo        "<option value = 9 id='Teal'> Teal </option>";
-                echo    "</select>";
-                echo "
-                            <script type='text/javascript'>
-                            $(document).ready(()=>{
-                                $('#colorIndex').val('.$color_index.');
-                            });   
-                            </script>
-                    ";
-                echo "</td>";
-                
-                //  Variable for BG color
-                echo "<td id='background color' style='background-color: $colors[$color_index]; width: 80%'>"; 
-                echo "  &nbsp;";
-                echo "</td>";
-                echo "</tr>";
+        <script type='text/javascript'>
+            function print(){
+                return(<p>Hello World</p>);
             }
-        }
-        echo "</table>";
-
-        echo "</div>";
-        /*-----------------------------End Top Table-------------------------------*/
-        ?>
+            print();
+        </script>
         
         <?php
 
