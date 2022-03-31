@@ -131,6 +131,7 @@
             var a = window.open('', '', 'height=1000, width=1000');
             a.document.write('<html>');
             a.document.write('<header> <h1>Team Indigo </h1><br>');
+            a.document.write('<?php echo Asset::img('small.png') ?>');
             a.document.write('<br></header>');
             a.document.write(divContents);
             a.document.write('<br>');

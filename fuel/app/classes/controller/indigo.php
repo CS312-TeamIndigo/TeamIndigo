@@ -67,6 +67,7 @@ class Controller_Indigo extends Controller_Template
             $this->template->css = 'east.css';
             $this->template->filename = "";
             $this->template->smallPic = "small.png";
+            $this->template->image = Asset::img('small.png',$data);
 
         } else {
             $data = array();
