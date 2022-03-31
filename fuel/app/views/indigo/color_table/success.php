@@ -10,10 +10,7 @@
         <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
         <p><input type="submit"/></p>
 
-        <script>
-                        var val = 0;
-                        document.cookie='profile_viewer_uid=' + String(val); 
-        </script>
+        
         <?php
 
         /*-----------------------------Table Variables-------------------------------*/
@@ -61,7 +58,7 @@
                 echo        "<option value = 3> Green </option>";
                 echo        "<option value = 4> Blue </option>";
                 echo        "<option value = 5> Purple  </option>";
-                echo        "<option value = 6> Grey </option>";
+                echo        "<option value = 6> Grey </option>";   
                 echo        "<option value = 7> Brown </option>";
                 echo        "<option value = 8> Black </option>";
                 echo        "<option value = 9> Teal </option>";
