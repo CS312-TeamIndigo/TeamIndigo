@@ -37,7 +37,7 @@
                 echo    "<select id='colorIndex' onchange='javascript:valueselect(this)'>";
                 echo        "<option value = 0> Red </option>";
                 echo        "<option value = 1> Orange </option>";
-                echo        "<option value = 2> Yellow </option>";
+                echo        "<option value = 2 selected> Yellow </option>";
                 echo        "<option value = 3> Green </option>";
                 echo        "<option value = 4> Blue </option>";
                 echo        "<option value = 5> Purple  </option>";
