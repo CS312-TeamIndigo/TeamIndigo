@@ -50,6 +50,7 @@
                 var new_color_index = '.$color_index.';
                 function btnClick(event) {
                     new_color_index = event.value;
+                    alert('this is the value' + new_color_index.toString());
                 }
                 </script>
                     ";
