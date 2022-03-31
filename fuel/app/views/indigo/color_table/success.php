@@ -14,13 +14,13 @@
         
         
         <script type='text/javascript'>
-            function print(){
+            function other_method(){
                 return(<p>Hello World</p>);
             }
         </script>
 
         <?php
-            echo "<script type ='text/javascript'>print()</script>"
+            echo "<script type ='text/javascript'>other_method()</script>"
         ?>
         
         <?php
