@@ -13,7 +13,6 @@
 
         
         
-        
         <?php
                    /*-----------------------------Top Table-------------------------------*/
         /*Top Table Variables*/
@@ -35,16 +34,16 @@
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
                 echo    "<select id='colorIndex' onchange='javascript:valueselect(this)'>";
-                echo        "<option value = 0> Red </option>";
-                echo        "<option value = 1> Orange </option>";
-                echo        "<option value = 2 selected> Yellow </option>";
-                echo        "<option value = 3> Green </option>";
-                echo        "<option value = 4> Blue </option>";
-                echo        "<option value = 5> Purple  </option>";
-                echo        "<option value = 6> Grey </option>";   
-                echo        "<option value = 7> Brown </option>";
-                echo        "<option value = 8> Black </option>";
-                echo        "<option value = 9> Teal </option>";
+                echo        "<option value = 0 id='Red'> Red </option>";
+                echo        "<option value = 1 id='Orange'> Orange </option>";
+                echo        "<option value = 2 id='Yellow'> Yellow </option>";
+                echo        "<option value = 3 id='Green'> Green </option>";
+                echo        "<option value = 4 id='Blue'> Blue </option>";
+                echo        "<option value = 5 id='Purple'> Purple  </option>";
+                echo        "<option value = 6 id='Grey'> Grey </option>";   
+                echo        "<option value = 7 id='Brown'> Brown </option>";
+                echo        "<option value = 8 id='Black'> Black </option>";
+                echo        "<option value = 9 id='Teal'> Teal </option>";
                 echo    "</select>";
                 echo "</td>";
                 //  Variable for BG color
