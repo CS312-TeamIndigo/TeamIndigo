@@ -48,8 +48,7 @@
                 echo "
                 <script type='text/javascript'>
                 function btnClick() {
-                var x = document.getElementById('background color');
-                x[0].style.backgroundColor ='blue'; 
+                alert('youre a goof');
                 }
                 </script>
                     ";
