@@ -60,9 +60,7 @@
         </script>
         <?php 
           $in_color = $_POST['colors']
-          echo "
-          <script><ColorTable /></script>
-          ";
+          echo "<script><ColorTable /></script>";
         ?>
       
 
