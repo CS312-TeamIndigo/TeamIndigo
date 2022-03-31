@@ -44,13 +44,14 @@
                 echo        "<option value = 7 id='Brown'> Brown </option>";
                 echo        "<option value = 8 id='Black'> Black </option>";
                 echo        "<option value = 9 id='Teal'> Teal </option>";
-                echo    "</select>";
-                echo "</td>";
                 echo "
                     <script type='text/javascript'>
                         $('select[name$='colorIndex']').val('.$color_index.');  
                     </script>
                     ";
+                echo    "</select>";
+                echo "</td>";
+                
                 //  Variable for BG color
                 echo "<td id='background color' style='background-color: $colors[$color_index]; width: 80%'>"; 
                 echo "  &nbsp;";
