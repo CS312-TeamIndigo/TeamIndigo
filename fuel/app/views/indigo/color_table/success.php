@@ -11,36 +11,18 @@
         <p><input type="submit"/></p>
 
         
+        
+        
         <?php
-
-        /*-----------------------------Table Variables-------------------------------*/
-
+                   /*-----------------------------Top Table-------------------------------*/
         /*Top Table Variables*/
         $in_color = $_POST['colors'];
         $in_table_height = 1;
         $temp_color = 0;
         $temp_table_height = 0;
         $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
-        /*Bottom Table Variables*/
-        $in_height = $_POST['rows'];
-        $in_row = $_POST['rows'];
-        $counter = 1;
-        $temp_row = 0;
-        $alphabet = range('A', 'Z');
 
-        /*---------------Debug Purposes--------------*/
-        /*echo "<br>";
-        echo "<Strong>";
-        echo "You entered ";
-        echo $in_height;
-        echo " rows and ";
-        echo $in_color;
-        echo " colors:";
-        echo "</Strong>";
-        echo "<br>";*/
-        /*---------------Debug Purposes--------------*/
-        
-                /*-----------------------------Top Table-------------------------------*/
+
         echo "<br>";
         echo "<div id='table1'>";
         echo "<table style='border: #0f0f0f; border-style: solid; width: 100%'>";
@@ -63,11 +45,9 @@
                 echo        "<option value = 8> Black </option>";
                 echo        "<option value = 9> Teal </option>";
                 echo    "</select>";
-            
                 echo "</td>";
                 //  Variable for BG color
-
-                echo "<td style='background-color: $colors[$color_index]; width: 80%'>"; 
+                echo "<td id='background color'; width: 80%'>"; 
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
@@ -77,6 +57,33 @@
 
         echo "</div>";
         /*-----------------------------End Top Table-------------------------------*/
+        ?>
+        
+        <?php
+
+        /*-----------------------------Table Variables-------------------------------*/
+
+       
+        /*Bottom Table Variables*/
+        $in_height = $_POST['rows'];
+        $in_row = $_POST['rows'];
+        $counter = 1;
+        $temp_row = 0;
+        $alphabet = range('A', 'Z');
+
+        /*---------------Debug Purposes--------------*/
+        /*echo "<br>";
+        echo "<Strong>";
+        echo "You entered ";
+        echo $in_height;
+        echo " rows and ";
+        echo $in_color;
+        echo " colors:";
+        echo "</Strong>";
+        echo "<br>";*/
+        /*---------------Debug Purposes--------------*/
+        
+     
 
         echo "<br>";
 
