@@ -34,16 +34,16 @@
                 echo "<td style='background-color: white; width: 20%;'>";
                 //Variable for Name of Color
                 echo    "<select class='colorIndex' onchange='javascript:valueselect(this)'>";
-                echo        "<option value = 0 id='Red'> Red </option>";
-                echo        "<option value = 1 id='Orange'> Orange </option>";
-                echo        "<option value = 2 id='Yellow'> Yellow </option>";
-                echo        "<option value = 3 id='Green'> Green </option>";
-                echo        "<option value = 4 id='Blue'> Blue </option>";
-                echo        "<option value = 5 id='Purple'> Purple  </option>";
-                echo        "<option value = 6 id='Grey'> Grey </option>";   
-                echo        "<option value = 7 id='Brown'> Brown </option>";
-                echo        "<option value = 8 id='Black'> Black </option>";
-                echo        "<option value = 9 id='Teal'> Teal </option>";
+                echo        "<option value = '0' id='Red'> Red </option>";
+                echo        "<option value = '1' id='Orange'> Orange </option>";
+                echo        "<option value = '2' id='Yellow'> Yellow </option>";
+                echo        "<option value = '3' id='Green'> Green </option>";
+                echo        "<option value = '4' id='Blue'> Blue </option>";
+                echo        "<option value = '5' id='Purple'> Purple  </option>";
+                echo        "<option value = '6' id='Grey'> Grey </option>";   
+                echo        "<option value = '7' id='Brown'> Brown </option>";
+                echo        "<option value = '8' id='Black'> Black </option>";
+                echo        "<option value = '9' id='Teal'> Teal </option>";
                 echo    "</select>";
                 echo "</td>";
                 echo "
