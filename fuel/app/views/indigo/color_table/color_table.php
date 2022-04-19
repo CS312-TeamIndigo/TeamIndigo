@@ -1,5 +1,5 @@
+<div class="sectionSpanSubTitle"></div>
 <div class="center">
-<div class="grid-container">
     <div class="grid-container-form">
         Please Enter The Number of Rows and the Number of Colors:
         <form action="color_table" method="post">
@@ -20,4 +20,4 @@
         </form>
     </div>
 </div>
-</div>
+
