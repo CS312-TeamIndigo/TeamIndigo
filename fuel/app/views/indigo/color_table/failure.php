@@ -1,3 +1,5 @@
+<div class="sectionSpanSubTitle"></div>
+
 <div class="center">
     <h3>Please Enter A Vaild Number!</h3><br>
     Please Enter The Number of Rows and the Number of Colors:
