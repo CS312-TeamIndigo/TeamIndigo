@@ -22,7 +22,7 @@ class Controller_Indigo extends Controller_Template
     {
         $data = array();
         $this->template->title = 'Team Indigo';
-        $this->template->headerTitle = 'Team Indigo';
+        $this->template->headerTitle = 'Welcome to Team Indigo';
         $this->template->content = View::forge('indigo/index', $data);
         $this->template->css = "east.css";
         $this->template->filename = "landscape.png";
