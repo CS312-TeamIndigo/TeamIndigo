@@ -16,14 +16,14 @@
         <?php echo Asset::img($smallPic) ?>
     </div>
     <ul class="navLink">
-        <a href="index"><span class="spanNav">Home</span></a><span class="spanNav" style="font-size: 25px; cursor: pointer"> | </span>
-        <a href="about"><span class="spanNav">About</span></a><span class="spanNav" style="font-size: 25px; cursor: pointer"> | </span>
+        <a href="index"><span class="spanNav">Home</span></a> <span class="spanNav">|</span>
+        <a href="about"><span class="spanNav">About</span></a> <span class="spanNav">| </span>
         <a href="color_table"><span class="spanNav">ColorTable</span></a>
     </ul>
 </nav>
 <div class="sectionSpanSubTitleBar">
     <div style="margin-left: 400px">
-    <p class="h1Header"><?php echo $headerTitle; ?> </p>
+    <h2 class="h1Header"><?php echo $headerTitle; ?> </h2>
     </div>
 </div>
 
