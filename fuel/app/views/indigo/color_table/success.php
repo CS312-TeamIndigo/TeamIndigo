@@ -1,5 +1,5 @@
+<div class="sectionSpanSubTitle"></div>
 <div class="center">
-<body>
 <section>
     <!--/---------------Debug Purposes--------------/-->
     <!--<h3>Success! Populating Table of Colors!</h3><br>-->
@@ -261,5 +261,4 @@
 
     </form>
 </section>
-</body>
 </div>
