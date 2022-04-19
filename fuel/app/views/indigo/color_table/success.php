@@ -1,4 +1,3 @@
-
 <div class="sectionSpanSubTitle"></div>
 <div class="center">
 <section>
@@ -12,8 +11,6 @@
         <p>Number of Colors: <input type="number" name="colors" id="colors" min='1' max='10'/></p>
         <p><input type="submit"/></p>
 
-        
-        
         <?php
                    /*-----------------------------Top Table-------------------------------*/
         /*Top Table Variables*/
@@ -41,7 +38,7 @@
                 echo        "<option value = 3 id='Green'> Green </option>";
                 echo        "<option value = 4 id='Blue'> Blue </option>";
                 echo        "<option value = 5 id='Purple'> Purple </option>";
-                echo        "<option value = 6 id='Grey'> Grey </option>";   
+                echo        "<option value = 6 id='Grey'> Grey </option>";
                 echo        "<option value = 7 id='Brown'> Brown </option>";
                 echo        "<option value = 8 id='Black'> Black </option>";
                 echo        "<option value = 9 id='Teal'> Teal </option>";
@@ -56,7 +53,7 @@
                     ";
                 echo "</td>";
                 //  Variable for BG color
-                echo "<td id='background_color' style='background-color: $colors[$color_index]; width: 80%'>"; 
+                echo "<td id='background_color' style='background-color: $colors[$color_index]; width: 80%'>";
                 echo "  &nbsp;";
                 echo "</td>";
                 echo "</tr>";
@@ -67,12 +64,12 @@
         echo "</div>";
         /*-----------------------------End Top Table-------------------------------*/
         ?>
-        
+
         <?php
 
         /*-----------------------------Table Variables-------------------------------*/
 
-       
+
         /*Bottom Table Variables*/
         $in_height = $_POST['rows'];
         $in_row = $_POST['rows'];
@@ -91,8 +88,8 @@
         echo "</Strong>";
         echo "<br>";*/
         /*---------------Debug Purposes--------------*/
-        
-     
+
+
 
         echo "<br>";
 
@@ -126,8 +123,6 @@
         <br>
 
         <!-----------------------------Print Current Table------------------------------->
-
-        <!--FIXME: Only Prints whole page - Needs to only print Logo, Header, Table-->
         <p>
             <button onClick="printDiv()">Print</button>
         </p>
@@ -137,16 +132,17 @@
             var divContents = document.getElementById("table1").innerHTML;
             var divContents2 = document.getElementById("table2").innerHTML;
             var a = window.open('', '', 'height=1000, width=1000');
-            a.document.write('<html>');
-            a.document.write('<header> <h1>Team Indigo </h1><br>');
-            a.document.write('<?php echo Asset::img('small.png') ?>');
-            a.document.write('<br></header>');
+            a.document.write('<html><header>');
+            a.document.write('<div style="text-align: center;">');
+            a.document.write('<?php echo Asset::img('smallPrint.png') ?>');
+            a.document.write('</div><h2 style="text-align: center; width: 100%; background: indigo; color: white; font-family: Optima, sans-serif;">Team Indigo</h2>');
+            a.document.write('</header><body>');
             a.document.write(divContents);
             a.document.write('<br>');
+            a.document.write('<div style="position: relative; right: 30%; left: 25%;">');
             a.document.write(divContents2);
-            a.document.write('</body></html>');
+            a.document.write('</div></body></html>');
             a.document.close();
-            a.print();
         }
         </script>
 
@@ -162,104 +158,6 @@
 
         echo Form::close();
         ?>
-
-        <!----------------------------EXAMPLE FOR END GOAL--------------------------->
-        <!--Debugging Example:
-
-        <table style="width:100%">
-            <tbody>
-            <tr>
-                <td style="background-color: white; width: 20%; ">Red</td>
-                <td style="background-color: red; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%">Orange</td>
-                <td style="background-color: Orange; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%; ">Yellow</td>
-                <td style="background-color: yellow; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%; ">Green</td>
-                <td style="background-color: green; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%">Blue</td>
-                <td style="background-color: blue; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%; ">Purple</td>
-                <td style="background-color: purple; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%">Grey</td>
-                <td style="background-color: grey; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%; ">Brown</td>
-                <td style="background-color: brown; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%">Black</td>
-                <td style="background-color: black; width: 80%">&nbsp;</td>
-            </tr>
-            <tr>
-                <td style="background-color: white; width: 20%">Teal</td>
-                <td style="background-color: teal; width: 80%">&nbsp;</td>
-            </tr>
-            </tbody>
-        </table>
-
-        <br>
-
-        <table style='border: #0f0f0f; border-style: solid'>
-            <tr>
-                <th>&nbsp;</th>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>D</th>
-                <th>E</th>
-                <th>F</th>
-                <th>G</th>
-                <th>H</th>
-                <th>I</th>
-            </tr>
-
-            <tr>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>10</td>
-            </tr>
-        </table>-->
-
-
     </form>
 </section>
 </div>
